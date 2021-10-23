@@ -37,3 +37,23 @@ elif option == 4:
 else:
 
     print("Incorrect number")
+
+num_shirt = int(input("\nNumber of shirts: "))
+
+num_short = int(input("\nNumber of shorts: "))
+
+total = (shirt_price * num_shirt) + (short_price * num_short)
+
+tax = 0.13 * total
+
+final_total = tax + total
+
+print("\nThe color of your shirts are: ", shirt_color)
+print("\nThe color of your shorts are: ", short_color)
+
+print("\nThe total number of shirt your want are: ", num_shirt)
+print("\nThe total number of short your want are: ", num_short)
+
+print("\nYour price before adding HST is", total)
+
+print("\nYour total price after adding HST is", final_total)
